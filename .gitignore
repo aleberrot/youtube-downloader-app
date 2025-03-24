@@ -1,4 +1,3 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
 node_modules/
@@ -35,4 +34,15 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
+# File app example
 app-example
+
+
+# venv Python
+venv
+
+# server logic (now in a separate repository)
+server
+
+
+README.md
