@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "youtubeDownloader",
+    "name": "YTD",
     "slug": "youtubeDownloader",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/logo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,29 +13,43 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/images/logo-transparent.png",
+        "backgroundColor": "#000000",
+        "permissions": [
+          "WRITE_EXTERNAL_STORAGE",
+          "READ_EXTERNAL_STORAGE",
+          "MEDIA_LIBRARY"
+        ]
+      },
+      "package": "com.aleberrot.youtubeDownloader"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon-32x32.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/logo-transparent.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#000000"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e2b7ac01-3302-4d05-88ff-c1e31682d3d2"
+      }
     }
   }
 }
